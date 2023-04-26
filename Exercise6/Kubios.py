@@ -7,8 +7,8 @@ import ujson
 
 
 def connection():
-    ssid = 'peace and love'
-    psw = 'carrot-cake-with-cinammon'
+    ssid = 'KME670Group8'
+    psw = 'or2i2hA00HVJsa1xMiIs'
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
     wlan.connect(ssid, psw)
