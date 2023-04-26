@@ -6,8 +6,8 @@ import urequests as requests
 
 
 def connection():
-    ssid = 'peace and love'
-    psw = 'carrot-cake-with-cinammon'
+    ssid = 'KME670Group8'
+    psw = 'or2i2hA00HVJsa1xMiIs'
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
     wlan.connect(ssid, psw)
@@ -30,7 +30,7 @@ oled = ssd1306.SSD1306_I2C(128, 64, i2c)
 
 try:
     ip = connection()
-    response = requests.get('http://192.168.50.3:8000')
+    response = requests.get('http://192.168.108.13:8000')
     if response.status_code == 200:
         print('response received')
 #         oled.fill(0)
